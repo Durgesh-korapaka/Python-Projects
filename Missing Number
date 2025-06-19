@@ -1,0 +1,14 @@
+n=input().split()
+new_list = []
+for i in n:
+    num= int(i)
+    new_list.append(num)
+maximum = max(new_list)
+num_set = set(new_list)
+
+first_n_set = set(range(1,maximum+1))
+missing_num_set = first_n_set.difference(num_set)
+missing_num_list = list(missing_num_set)
+missing_num_list.sort()
+print(missing_num_list)
+    
