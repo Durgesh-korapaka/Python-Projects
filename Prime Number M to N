@@ -1,0 +1,16 @@
+m=int(input())
+n=int(input())
+found_prime=False
+for i in range(max(2,m),n + 1):
+    factors=0
+    for j in range(2,i):
+        if i%j == 0:
+            factors=factors + 1 
+    if factors == 0:
+        print(i,end=' ')
+        found_prime = True
+        
+if not found_prime:
+    print("No Prime Numbers Found")
+else:
+    print()
