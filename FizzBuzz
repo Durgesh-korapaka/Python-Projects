@@ -1,0 +1,17 @@
+def fizz_buzz(number):
+    # Complete this function
+    if ((number%3==0) and (number%5==0)):
+        res = "FizzBuzz"
+    elif (number%5 == 0):
+        res = "Buzz"
+    elif (number%3 == 0):
+        res ="Fizz"
+    else:
+        res = number
+    return res
+
+
+number = int(input())
+# Call the fizz_buzz function
+res = fizz_buzz(number)
+print(res)
