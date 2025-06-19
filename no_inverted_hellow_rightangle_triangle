@@ -1,0 +1,20 @@
+n=int(input())
+k=1
+for i in range(1,n+1):
+    if i==1 :
+        each_row=""
+        for j in range(n):
+            each_row+=(str(k)+" ")
+            k=k+1 
+        print(each_row)
+    elif i == n:
+        print(str(k)+" ")
+    else:
+        each_row=(str(k) + " ")
+        hollow_space=(n-i-1)* "  "
+        each_row+=hollow_space
+        k += int(len(hollow_space) / 2) + 1
+        each_row += (str(k) + " ")
+        k=k+1 
+        print(each_row)
+        
