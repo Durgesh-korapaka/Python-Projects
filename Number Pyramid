@@ -1,0 +1,9 @@
+s=int(input())
+n=int(input())
+for i in range(n ):
+    print((n-i-1)*" ",end="")
+    k=s
+    for j in range(0,i+1):
+        print(k,end=" ")
+        k=k+1 
+    print()
