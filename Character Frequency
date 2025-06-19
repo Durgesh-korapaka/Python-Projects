@@ -1,0 +1,13 @@
+def print_char_count(line):
+    line = line.lower()
+    unique_chars = set(line)
+    unique_chars.discard(" ")
+    for  i in sorted(unique_chars):
+        print("{}: {}" .format(i,line.count(i)))
+
+
+
+
+line=input()
+print_char_count(line)
+    
